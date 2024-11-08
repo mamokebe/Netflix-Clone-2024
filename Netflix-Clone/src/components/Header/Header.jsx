@@ -10,11 +10,15 @@ const Header = () => {
   return (
     <div className="header-outer-container">
       <div className="header-container">
-        <div className="header-left">
+        <div className="logo">
           <ul>
             <li>
               <img src={Logo} alt="Logo" width={100} />
             </li>
+          </ul>
+        </div>
+        <div className="header-left">
+          <ul>
             <li>Home</li>
             <li>TVShows</li>
             <li>Movies</li>
