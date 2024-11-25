@@ -5,6 +5,7 @@ import requests from "../../utils/requests";
 
 const Banner = () => {
   const [movie, setMovie] = useState({});
+  const baseUrl = "https://image.tmdb.org/t/p/original";
 
   //function fetching data
   const fetchData = async () => {
@@ -19,17 +20,15 @@ const Banner = () => {
       console.log("error", error);
     }
   };
-
   useEffect(() => {
     fetchData();
   }, []);
-
   return (
     <div
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
+        backgroundImage: `url('${baseUrl}${movie?.backdrop_path}')`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
@@ -52,5 +51,4 @@ const Banner = () => {
     </div>
   );
 };
-
 export default Banner;

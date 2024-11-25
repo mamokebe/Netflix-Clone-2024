@@ -1,10 +1,13 @@
 {
+  "homepage": "https://mamokebe.github.io/Netflix-Clone-2024",
   "name": "netflix-clone",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -16,7 +19,7 @@
     "@mui/material": "^6.1.6",
     "axios": "^1.7.7",
     "dotenv": "^16.4.5",
-    "movie-trailer": "^3.2.2",
+    "movie-trailer": "^3.2.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-youtube": "^10.1.0"
@@ -30,6 +33,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
+    "gh-pages": "^6.2.0",
     "globals": "^15.11.0",
     "vite": "^5.4.10"
   }

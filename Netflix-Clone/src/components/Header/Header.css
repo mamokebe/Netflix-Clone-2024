@@ -39,7 +39,21 @@
   list-style: none;
   cursor: pointer;
 }
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  /* .header-left ul li:not(:first-child) {
+    display: none;
+  } */
+  .header-left ul li {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .header-left ul li {
+    display: none;
+  }
+}
+
+/* @media (max-width: 900px) {
   .header-left {
     display: none;
   }
@@ -49,4 +63,4 @@
   .logo {
     margin-left: 20px;
   }
-}
+} */
