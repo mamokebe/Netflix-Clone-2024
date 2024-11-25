@@ -7,7 +7,7 @@ dotenv.config();
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/",
+  base: "/Netlify-Clone-2024",
   define: {
     "process.env": process.env,
   },
