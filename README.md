@@ -17,7 +17,7 @@ For the frontend, I added Netflix videos to the website by using a third party A
 live: [Here](https://mamokebe.github.io/Netflix-Clone-2024/) on github page
 
 # Requirements
-- Vscode
+- VScode
 - Node
 - dotenv
 - axios
