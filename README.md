@@ -35,4 +35,4 @@ To access in your components:
 
 - const apiKey = import.meta.env.VITE_API_KEY
 
-Note: don't forget to create your api key  from the [google cloud](https://www.themoviedb.org/) by creating account.
+Note: don't forget to create your api key  from the [TMDB](https://www.themoviedb.org/) by creating account.
